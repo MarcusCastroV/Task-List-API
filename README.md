@@ -34,7 +34,7 @@ git clone https://github.com/MarcusCastroV/Task-List-API.git
 
 2. Navigate to the repo:
 ```
-cd supermarket-list-api
+cd Task-List-api
 ```
 
 3. Install the dependencies:
