@@ -1,4 +1,4 @@
-## Supermarket List API
+## Task List API
 
 API in Node.js using Express and Mongoose to connect a MongoDB DataBase
 
