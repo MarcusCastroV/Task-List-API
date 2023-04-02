@@ -2,7 +2,7 @@ const express = require("express");
 const ListTasks = require("../models/ListTasks");
 const router = express.Router();
 
-router.get("/list-item", async (req, res) => {
+router.get("/list-task", async (req, res) => {
   try {
     const { username } = req.headers;
     if (!username) {
@@ -17,7 +17,7 @@ router.get("/list-item", async (req, res) => {
   }
 });
 
-router.post("/list-item", async (req, res) => {
+router.post("/list-task", async (req, res) => {
   try {
     const { username } = req.headers;
     if (!username) {
@@ -43,7 +43,7 @@ router.post("/list-item", async (req, res) => {
   }
 });
 
-router.delete("/list-item/:id", async (req, res) => {
+router.delete("/list-task/:id", async (req, res) => {
   try {
     const id = req.params.id;
     if (!id) {
@@ -57,7 +57,7 @@ router.delete("/list-item/:id", async (req, res) => {
   }
 });
 
-router.put("/list-item/:id", async (req, res) => {
+router.put("/list-task/:id", async (req, res) => {
   try {
     const { id } = req.params;
     if (!id) {
